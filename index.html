@@ -13,9 +13,29 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<img src="img/header-bg.png" alt="" class="header-bg">
+<img src="img/header-bg.png" alt="" class="header-bg pc-tru">
+<img src="img/header-tablet.png" alt="" class="header-bg tablet-true">
+<img src="img/header-mobile.png" alt="" class="header-bg mob-true">
 <header class="header" id="header">
+	<div class="mobile-menu mob-true">
+		<img src="img/close.png" alt="" class="mobile-menu-close">
+		<ul class="footer-list">
+			<li class="footer-list__item">
+				<a class="footer-list__item_link scroll-btn" href="#header">Главная</a>
+			</li>
+			<li class="footer-list__item">
+				<a class="footer-list__item_link scroll-btn" href="#biography">Биография</a>
+			</li>
+			<li class="footer-list__item">
+				<a class="footer-list__item_link scroll-btn" href="#services">О курсах</a>
+			</li>
+			<li class="footer-list__item">
+				<a class="footer-list__item_link footer-list__item_link_btn" href="">Запись</a>
+			</li>
+		</ul>
+	</div>
 	<nav class="header-nav wow fadeInLeft">
+		<img src="img/menu.png" alt="" class="mobile-menu-button mob-true">
 		<div class="container">
 			<ul class="header-list">
 				<li class="header-list__item">
@@ -59,7 +79,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="header-bottom wow fadeInLeft">
+	<div class="header-bottom">
 		<a href="#" class="contacts-soc__item">
 			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M34.2871 5.01923C33.7332 4.96047 33.131 5.04699 32.526 5.28615C31.776 5.58115 20.024 10.5247 9.06901 15.1364L5.44922 16.6599C4.04755 17.2282 3.33984 18.1525 3.33984 19.3975C3.33984 20.2691 3.70875 21.4515 5.46875 22.1481L11.5788 24.596C12.1071 26.181 13.3342 29.8612 13.6426 30.8395C13.8259 31.4195 14.289 32.8807 15.459 33.2223C15.699 33.304 15.9494 33.3461 16.2044 33.346C16.9428 33.346 17.4744 33.0024 17.7344 32.8024L21.6178 29.5179L26.3346 33.8799C26.5163 34.0649 27.4779 34.9997 28.7695 34.9997C30.3812 34.9997 31.6037 33.6581 31.8587 32.3597C31.9971 31.6481 36.5462 8.81146 36.5462 8.8148C36.9546 6.98313 36.2204 6.03295 35.7487 5.62795C35.3445 5.28212 34.8411 5.07798 34.2871 5.01923ZM33.1836 8.61949C32.5553 11.7695 29.13 28.9634 28.61 31.4418L21.7155 25.0648L17.0378 29.0264L18.3333 23.958C18.3333 23.958 27.2709 14.9111 27.8092 14.3845C28.2426 13.9628 28.3333 13.815 28.3333 13.6683C28.3333 13.4733 28.233 13.333 28.0013 13.333C27.793 13.333 27.51 13.5327 27.36 13.626C25.4544 14.814 17.3402 19.4368 13.3464 21.7087L7.55208 19.3942L10.3646 18.2126C17.5296 15.1959 30.2903 9.82282 33.1836 8.61949Z" fill="#666666"/>
@@ -89,7 +109,8 @@
 				операциям с риском для жизни, реабилитацией после операций, онкологией, предотвращением метастаз, семейными и личными конфликтами, изменами, сохранением семьи, судебными делами.
 			</p>
 			<div class="biography-about">
-				<img src="img/bio-img.png" alt="" class="biography-about__left wow fadeInLeft">
+				<img src="img/bio-img.png" alt="" class="biography-about__left wow pc-tru fadeInLeft">
+				<img src="img/bio.png" alt="" class="biography-about__left wow tablet-true fadeInLeft">
 				<div class="biography-about-text wow fadeInRight">
 					<ul class="biography-list">
 						<li class="biography-list__item">
@@ -116,7 +137,9 @@
 			</div>
 			<div class="biography-tablet ">
 				<div class="biography-tablet-left wow fadeInLeft">
-					<img src="img/tablet.png" alt="" class="biography-tablet__img">
+					<img src="img/tablet.png" alt="" class="biography-tablet__img pc-tru">
+					<img src="img/tablet-tb.png" alt="" class="biography-tablet__img tablet-true" >
+					<img src="img/tablet-mobile.png" alt="" class="biography-tablet__img mob-true" >
 				</div>
 				<div class="biography-tablet-right wow fadeInRight">
 					<h3 class="biography-tablet__title">
@@ -198,61 +221,73 @@
 		</div>
 		<div class="you-row">
 			<div class="you-block wow fadeInUp" data-wow-delay="0.3s">
-				<img src="img/you-bg (1).png" alt="" class="you-block__img">
+				<img src="img/you-bg (1).png" alt="" class="you-block__img you-block-pc">
+				<img src="img/bl-mob (1).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
 					<span class="you-block__number">
 						A
 					</span>
-					<h3 class="you-block__title">
-						Верю и пробую
-					</h3>
-					<p class="you-block__text">
-						Профилактика и предотвращение. Открыт ко всему, все работает, исцеление наступает в свой срок.
-					</p>
+					<div class="you-block-wrap">
+						<h3 class="you-block__title">
+							Верю и пробую
+						</h3>
+						<p class="you-block__text">
+							Профилактика и предотвращение. Открыт ко всему, все работает, исцеление наступает в свой срок.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="you-block wow fadeInUp" data-wow-delay="0.6s">
-				<img src="img/you-bg (2).png" alt="" class="you-block__img">
+				<img src="img/you-bg (2).png" alt="" class="you-block__img you-block-pc">
+				<img src="img/bl-mob (2).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
 					<span class="you-block__number">
 						B
 					</span>
-					<h3 class="you-block__title">
-						Не верю, <br>
-						но попробую
-					</h3>
-					<p class="you-block__text">
-						Пришел через сарафанное радио. <br>
-						«Да, мне помогает, но терапия странная».
-					</p>
+					<div class="you-block-wrap">
+						<h3 class="you-block__title">
+							Не верю, <br>
+							но попробую
+						</h3>
+						<p class="you-block__text">
+							Пришел через сарафанное радио. <br>
+							«Да, мне помогает, но терапия странная».
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="you-block wow fadeInUp" data-wow-delay="0.9s">
-				<img src="img/you-bg (3).png" alt="" class="you-block__img">
+				<img src="img/you-bg (3).png" alt="" class="you-block__img you-block-pc">
+				<img src="img/bl-mob (3).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
 					<span class="you-block__number">
 						C
 					</span>
-					<h3 class="you-block__title">
-						На грани отчаяния
-					</h3>
-					<p class="you-block__text">
-						Уже пробовал все, но ничего не помогает. Имеются нарушения, причину которых не удается найти.
-					</p>
+					<div class="you-block-wrap">
+						<h3 class="you-block__title">
+							На грани отчаяния
+						</h3>
+						<p class="you-block__text">
+							Уже пробовал все, но ничего не помогает. Имеются нарушения, причину которых не удается найти.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="you-block wow fadeInUp" data-wow-delay="1.2s">
-				<img src="img/you-bg (4).png" alt="" class="you-block__img">
+				<img src="img/you-bg (4).png" alt="" class="you-block__img you-block-pc">
+				<img src="img/bl-mob (4).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
 					<span class="you-block__number">
 						D
 					</span>
-					<h3 class="you-block__title">
-						Одной ногой в могиле
-					</h3>
-					<p class="you-block__text">
-						Есть тяжелые  заболевания и наследственные особенности, такие как онкология, аллергии, экзема. Были инсульты, инфаркты или попытки суицида.
-					</p>
+					<div class="you-block-wrap">
+						<h3 class="you-block__title">
+							Одной ногой в могиле
+						</h3>
+						<p class="you-block__text">
+							Есть тяжелые  заболевания и наследственные особенности, такие как онкология, аллергии, экзема. Были инсульты, инфаркты или попытки суицида.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -370,7 +405,8 @@
 			</p>
 		</div>
 		<div class="vitaly-right wow fadeInRight">
-			<img src="img/vitaliu.png" alt="">
+			<img class="pc-tru" src="img/vitaliu.png" alt="">
+			<img class="tablet-true" src="img/vitaliu-tb.png" alt="">
 		</div>
 	</div>
 </section>
@@ -411,7 +447,9 @@
 	<div class="services-row">
 		<div class="services-left services-col">
 			<div class="services-block wow fadeInLeft">
-				<img src="img/Rectangle 3.png" alt="" class="services-block__img">
+				<img src="img/Rectangle 3.png" alt="" class="services-block__img services-block__pc">
+				<img src="img/mastter (2).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (1).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Групповая или <br>
@@ -441,6 +479,8 @@
 		<div class="services-center services-col">
 			<div class="services-block wow fadeInUp">
 				<img src="img/Rectangle 7.png" alt="" class="services-block__img">
+				<img src="img/mastter (6).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (5).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Курс
@@ -464,6 +504,8 @@
 			</div>
 			<div class="services-block wow fadeInUp">
 				<img src="img/Rectangle 6.png" alt="" class="services-block__img">
+				<img src="img/mastter (5).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (4).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Марафон
@@ -482,6 +524,8 @@
 			</div>
 			<div class="services-block wow fadeInUp">
 				<img src="img/Rectangle 4.png" alt="" class="services-block__img">
+				<img src="img/mastter (1).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (2).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Вебинар <br>
@@ -502,6 +546,8 @@
 		<div class="services-right services-col">
 			<div class="services-block wow fadeInRight">
 				<img src="img/Rectangle 2.png" alt="" class="services-block__img">
+				<img src="img/mastter (1).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (7).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Консультация 1,5 ч.
@@ -522,6 +568,8 @@
 			</div>
 			<div class="services-block wow fadeInRight">
 				<img src="img/Rectangle 5.png" alt="" class="services-block__img">
+				<img src="img/mastter (4).png" alt="" class="services-block__img services-block__tb">
+				<img src="img/kurs-mobile (3).png" alt="" class="services-block__img services-block__mob">
 				<div class="services-block-abc">
 					<h3 class="services-block__title">
 						Долгосрочный <br>
