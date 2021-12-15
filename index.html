@@ -10,6 +10,7 @@
 	<!-- libs css-->
 	<link rel="stylesheet" href="css/libs.min.css">
 	<!-- main css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,10 +25,10 @@
 				<a class="footer-list__item_link scroll-btn" href="#header">Главная</a>
 			</li>
 			<li class="footer-list__item">
-				<a class="footer-list__item_link scroll-btn" href="#biography">Биография</a>
+				<a class="footer-list__item_link" href="biography.html">Биография</a>
 			</li>
 			<li class="footer-list__item">
-				<a class="footer-list__item_link scroll-btn" href="#services">О курсах</a>
+				<a class="footer-list__item_link scroll-btn" href="#result">Отзывы</a>
 			</li>
 			<li class="footer-list__item">
 				<a class="footer-list__item_link footer-list__item_link_btn" href="">Запись</a>
@@ -42,10 +43,10 @@
 					<a class="scroll-btn" href="#header">Главная</a>
 				</li>
 				<li class="header-list__item">
-					<a class="scroll-btn" href="#biography">Биография</a>
+					<a class="" href="biography.html">Биография</a>
 				</li>
 				<li class="header-list__item">
-					<a class="scroll-btn" href="#services">О курсах</a>
+					<a class="scroll-btn" href="#result">Отзывы</a>
 				</li>
 				<li class="header-list__item ">
 					<a href="" class="body-btn">Запись</a>
@@ -71,8 +72,8 @@
 				Неважно, с какой причины начинается терапия – <br>
 				все кусочки пазла становятся на свои места.
 			</p>
-			<a href="#biography" class="scroll-btn header-content__more">
-				Подробнее
+			<a href="#services" class="scroll-btn header-content__more">
+				О курсах
 				<span class="content__more_arrow">
 					<img src="img/arrow-bottom.png" alt="">
 				</span>
@@ -104,12 +105,13 @@
 				Биография
 			</h2>
 			<p class="biography-text wow fadeInUp">
-				<strong>Целитель-энергопрактик со стажем 20 лет</strong> <br>
+				<strong>Энергопрактик со стажем 20 лет</strong> <br>
 				<strong>Помогаю с:</strong> генетическими заболеваниями, подготовкой к сложным 
 				операциям с риском для жизни, реабилитацией после операций, онкологией, предотвращением метастаз, семейными и личными конфликтами, изменами, сохранением семьи, судебными делами.
 			</p>
 			<div class="biography-about">
 				<img src="img/bio-img.png" alt="" class="biography-about__left wow pc-tru fadeInLeft">
+				<img src="img/about-580.png" alt="" class="biography-about__left wow midlee-img fadeInLeft">
 				<img src="img/bio.png" alt="" class="biography-about__left wow tablet-true fadeInLeft">
 				<div class="biography-about-text wow fadeInRight">
 					<ul class="biography-list">
@@ -135,22 +137,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="biography-tablet ">
-				<div class="biography-tablet-left wow fadeInLeft">
-					<img src="img/tablet.png" alt="" class="biography-tablet__img pc-tru">
-					<img src="img/tablet-tb.png" alt="" class="biography-tablet__img tablet-true" >
-					<img src="img/tablet-mobile.png" alt="" class="biography-tablet__img mob-true" >
-				</div>
-				<div class="biography-tablet-right wow fadeInRight">
-					<h3 class="biography-tablet__title">
-						Когда-то я сама была в трудной ситуации, не могла найти гармонию с собой, своим телом и семьей, но именно это вывело меня на верный путь.  
-					</h3>
-					<p class="biography-tablet__text">
-						С 2001 года мне доверились более 10 000 клиентов, с которыми мы провели свыше 50 000 часов терапии. 
-						Я работаю лично и на расстоянии, через членов семьи, через пространство. 
-						Вы можете не только прийти на мастер-классы и марафоны, но и получить индивидуальную программу. Я проведу вас через трудный период, учитывая все особенности вашей проблемы.
-					</p>
-				</div>
+			<div class="biography-bottom">
+				<span class="biography-bottom__title">
+					Биография Ины Мейталь
+				</span>
+				<a href="biography.html" class="biography-bottom__btn">
+					Читать полностью
+					<img src="img/arrow-r.png" alt="">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -213,6 +207,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="master__bottom">
+		<a href="#services" class="scroll-btn curs-btn">
+			 к мастер классам
+		</a>
+	</div>
 </section>
 <section class="you">
 	<div class="container">
@@ -220,7 +219,7 @@
 			Какой вы ?
 		</div>
 		<div class="you-row">
-			<div class="you-block wow fadeInUp" data-wow-delay="0.3s">
+			<div class="you-block you-block-1 wow fadeInUp" data-wow-delay="0.3s">
 				<img src="img/you-bg (1).png" alt="" class="you-block__img you-block-pc">
 				<img src="img/bl-mob (1).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
@@ -228,16 +227,19 @@
 						A
 					</span>
 					<div class="you-block-wrap">
-						<h3 class="you-block__title">
-							Верю и пробую
-						</h3>
+						<div class="you-block__title__wrap">
+							<h3 class="you-block__title">
+								Верю и пробую
+							</h3>
+						</div>
+						
 						<p class="you-block__text">
 							Профилактика и предотвращение. Открыт ко всему, все работает, исцеление наступает в свой срок.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="you-block wow fadeInUp" data-wow-delay="0.6s">
+			<div class="you-block you-block-2 wow fadeInUp" data-wow-delay="0.6s">
 				<img src="img/you-bg (2).png" alt="" class="you-block__img you-block-pc">
 				<img src="img/bl-mob (2).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
@@ -245,10 +247,12 @@
 						B
 					</span>
 					<div class="you-block-wrap">
-						<h3 class="you-block__title">
-							Не верю, <br>
-							но попробую
-						</h3>
+						<div class="you-block__title__wrap">
+							<h3 class="you-block__title">
+								Не верю, <br>
+								но попробую
+							</h3>
+						</div>
 						<p class="you-block__text">
 							Пришел через сарафанное радио. <br>
 							«Да, мне помогает, но терапия странная».
@@ -256,7 +260,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="you-block wow fadeInUp" data-wow-delay="0.9s">
+			<div class="you-block you-block-3 wow fadeInUp" data-wow-delay="0.9s">
 				<img src="img/you-bg (3).png" alt="" class="you-block__img you-block-pc">
 				<img src="img/bl-mob (3).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
@@ -264,16 +268,18 @@
 						C
 					</span>
 					<div class="you-block-wrap">
-						<h3 class="you-block__title">
-							На грани отчаяния
-						</h3>
+						<div class="you-block__title__wrap">
+							<h3 class="you-block__title">
+								На грани отчаяния
+							</h3>
+						</div>
 						<p class="you-block__text">
 							Уже пробовал все, но ничего не помогает. Имеются нарушения, причину которых не удается найти.
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="you-block wow fadeInUp" data-wow-delay="1.2s">
+			<div class="you-block you-block-4 wow fadeInUp" data-wow-delay="1.2s">
 				<img src="img/you-bg (4).png" alt="" class="you-block__img you-block-pc">
 				<img src="img/bl-mob (4).png" alt="" class="you-block__img you-block-tb">
 				<div class="you-block-rev">
@@ -281,9 +287,11 @@
 						D
 					</span>
 					<div class="you-block-wrap">
-						<h3 class="you-block__title">
-							Одной ногой в могиле
-						</h3>
+						<div class="you-block__title__wrap">
+							<h3 class="you-block__title">
+								Одной ногой в могиле
+							</h3>
+						</div>
 						<p class="you-block__text">
 							Есть тяжелые  заболевания и наследственные особенности, такие как онкология, аллергии, экзема. Были инсульты, инфаркты или попытки суицида.
 						</p>
@@ -292,14 +300,18 @@
 			</div>
 		</div>
 		<div class="you-bottom wow fadeInUp">
-			Если вы B или С и тем более D, я предлагаю вам ознакомиться<br> с  результатами и отзывами моих клиентов! 
+			<p>Если вы B или С и тем более D, я предлагаю вам ознакомиться<br> с  результатами и отзывами моих клиентов! </p>
+
+			<a href="#services" class="curs-btn scroll-btn">
+				 к мастер классам
+			</a>
 		</div>
 	</div>
 </section>
-<section class="result">
+<section class="result" id="result">
 	<div class="container">
 		<div class="section-title section-title__left wow fadeInLeft">
-			Результаты
+			Отзывы
 		</div>
 	</div>
 	<div class="result-wrapper">
@@ -370,6 +382,9 @@
 			</div>
 		</div>
 	</div>
+	<a href="reviews-inna.html" class="curs-btn">
+		больше отзывов
+	</a>
 </section>
 <section class="advantage">
 	<img src="img/advantage-bg.png" alt="" class="advantage-bg">
@@ -407,33 +422,43 @@
 		<div class="vitaly-right wow fadeInRight">
 			<img class="pc-tru" src="img/vitaliu.png" alt="">
 			<img class="tablet-true" src="img/vitaliu-tb.png" alt="">
+			<img src="img/vitalia-mobile.png" alt="" class="mob-true">
 		</div>
 	</div>
 </section>
 <section class="feedback">
 	<div class="container">
 		<h2 class="section-title wow fadeInUp">
-			Обратная связь
+			Отзывы
 		</h2>
 		<p class="feedback__text wow fadeInUp">
-			1) Виталий сделал мне астрологическую карту, указав дату и место рождения. Другой астролог сделал мне западную астрологическую карту, которая была информативной, но у меня все равно осталось много вопросов. Виталий написал мне гораздо более подробную информацию и прояснил многие моменты в моей жизни. Он также дал мне инструменты для решения моих проблем. Благодаря ему я понимаю, что моя жизнь идет своим чередом, но также есть возможность уравновесить некоторые аспекты, которые меня не устраивали.
+			Виталий сделал мне астрологическую карту по ведической астрологии. Для этого я дала ему 
+			свою дату и место рождения. Другой астролог сделал мне западную астрологическую карту, 
+			что было хорошо, но у меня оставалось много вопросов. Виталий написал мне гораздо более 
+			подробную информацию и прояснил многие сомнения относительно того, почему моя жизнь 
+			идет и продолжается как есть. Он также дал мне инструменты для решения моих проблем. 
+			Благодаря ему я понимаю, что моя жизнь идет своим чередом, но также есть возможность 
+			уравновесить некоторые аспекты, которые меня не устраивали 
 			<br>
 			<br>
-			2) Читая свою карту рождения, я смогла ясно увидеть некоторые аспекты своей личности, и это помогло мне лучше понять себя.
+			<strong>Перевод с Испанского</strong> <br>
+			Патрисия. 44 года, Кордоба, Испания
 			<br>
 			<br>
-			3) Я попросила свою натальную карту, и результат оказался оптимальным. Я очень довольна расшифровкой карты, смогла многое понять о себе. Настолько, что я попросила карту рождения для моего трехлетнего внука, чтобы получить дополнительную информацию о ребенке. Я уверена, что такая карта послужит его родителям небольшой инструкцией по его воспитанию, раскрытию возможностей и способам лечения. Карту можно рассматривать как хорошее руководство для личности этого нового человека и, таким образом, пролить на нее немного света вместо того, чтобы идти по темноте и обнаруживать проблемы, когда уже слишком поздно.
+			<br>
+			 Читая свою карту рождения, я смогла ясно увидеть некоторые аспекты своей личности, и это
+			помогло мне лучше понять себя. 
 			<br>
 			<br>
-			4) Астрологическая карта мне помогла и очень понравилась, я почувствовала, что мне близко то, что описывалось в разборе. Поблагодари своего сына за нее. Много поцелуев.
-			<br>
-			<br>
-			5) Виталий добрый день, благодарю за такую подробную информацию обо мне. Я не предполагал, что по дате, времени и месту рождения можно так четко сформулировать то, что заложено в личности человека, какие качества.
-			На сегодняшний день это очень значимая и ценная информация, которая поможет выбрать правильный путь в дальнейшей жизни, избежать бесполезных действий, не тратить на это время и энергию. Вы мне очень помогли разобраться во многих вопросах и в каком направлении двигаться дальше.
+			<strong>Перевод с Испанского</strong> <br>
+			Эстер, 28 лет, Барселона, Испания
 		</p>
 		<div class="feedback-bottom">
+			<a href="reviews-vitaly.html" class="feedback-bottom__btn wow fadeInUp">
+				Еще отзывы
+			</a>
 			<a href="#" class="body-btn wow fadeInUp">
-				Запись
+				Записаться
 			</a>
 		</div>
 	</div>
@@ -444,153 +469,146 @@
 			Мастер классы и курсы
 		</h2>
 	</div>
-	<div class="services-row">
-		<div class="services-left services-col">
-			<div class="services-block wow fadeInLeft">
-				<img src="img/Rectangle 3.png" alt="" class="services-block__img services-block__pc">
-				<img src="img/mastter (2).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (1).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Групповая или <br>
-						семейная <br> 
-						консультация <br>
-						 1,5 ч.
-					</h3>
-					<span class="services-block__price">
-						10 000 руб. | 85 евро
-					</span>
-					<p class="services-block__text">
-						Супруги, дети, родители, суицид,<br> беременность, финансы, бизнес, <br>
-						партнеры, конфликты. <br>
-						Экспертиза, диагностика, 
-						терапия,<br> разработка <br>
-						индивидуального плана работы<br> при необходимости. <br>
-						В зависимости от ситуации. Как 
-						правило <br> – среднесрочная и
-						долгосрочная. <br>
-					</p>
+	<div class="container">
+		<div class="services-row">
+			<div class="services-block wow fadeInUp">
+				<div class="services-block-img__wrapper">
+					<img src="img/master/master-1 (2).png" alt="" class="services-block__img services-block__pc">
+				</div>	
+				<div class="services-block-wrp">
+					<div class="services-block-abc">
+						<h3 class="services-block__title">
+							Личная и семейная терапия
+						</h3>
+						<span class="services-block__price">
+							10 000 руб. | 85 евро
+						</span>
+						<p class="services-block__text">
+							Супруги, дети, родители, суицид, беременность, финансы, бизнес, партнеры,<br>  конфликты. 
+							Экспертиза, диагностика,  <br>
+							терапия, разработка  <br>
+							индивидуального плана работы при необходимости. <br>
+							В зависимости от ситуации. Как  <br>
+							правило – среднесрочная и <br>
+							долгосрочная.
+
+						</p>
+					</div>
+					<div class="services-block-btns">
+						<a href="#" class="body-btn">
+							Записаться
+						</a>
+						<a href="class.html" class="services-block-btns_pdrn">
+							Подробнее
+						</a>
+					</div>
 				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
+			</div>
+			<div class="services-block wow fadeInUp">
+				<div class="services-block-img__wrapper">
+					<img src="img/master/master-1 (1).png" alt="" class="services-block__img services-block__pc">
+				</div>	
+				<div class="services-block-wrp">
+					<div class="services-block-abc">
+						<h3 class="services-block__title">
+							Медитативная практика, личная или для <br>
+							 помощи близкому человеку
+						</h3>
+						<span class="services-block__price">
+							от 125 евро <span class="services-block__price__time">от 3 до 30 дней</span>
+						</span>
+						<p class="services-block__text">
+							Уникальная авторская методика Ины Мейталь. Не нужно ничего представлять <br>
+							или воображать. Это аудио-практика, которая записывается по личной просьбе  <br>
+							с целью проработки любой проблемы. Работа проводится с причиной проблемы. Можно  <br>проходить практику ежедневно или по желанию. Запись несет в себе энергию, которая  <br>запускает положительную трансформацию.
+						</p>
+					</div>
+					<div class="services-block-btns">
+						<a href="#" class="body-btn">
+							Записаться
+						</a>
+						<a href="class.html" class="services-block-btns_pdrn">
+							Подробнее
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="services-block wow fadeInUp">
+				<div class="services-block-img__wrapper">
+					<img src="img/master/master-1 (3).png" alt="" class="services-block__img services-block__pc">
+				</div>	
+				<div class="services-block-wrp">
+					<div class="services-block-abc">
+						<h3 class="services-block__title">
+							Энергокоучинг
+						</h3>
+						<span class="services-block__price">
+							7 000 руб. | 85 евро
+						</span>
+						<p class="services-block__text">
+							Работа с проблемами и стрессом в любой сфере: <br>
+							- предназначение; <br>
+							- финансы и карьера; <br>
+							- отношения и эмоции. 
+						</p>
+					</div>
+					<div class="services-block-btns">
+						<a href="#" class="body-btn">
+							Записаться
+						</a>
+						<a href="class.html" class="services-block-btns_pdrn">
+							Подробнее
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="services-block wow fadeInUp">
+				<div class="services-block-img__wrapper">
+					<img src="img/master/master-1 (4).png" alt="" class="services-block__img services-block__pc">
+				</div>	
+				<div class="services-block-wrp">
+					<div class="services-block-abc">
+						<h3 class="services-block__title">
+							Курс «Эмоциональный спецназ»
+						</h3>
+						<span class="services-block__price">
+							7 000 руб. | 85 евро
+						</span>
+						<p class="services-block__text">
+							Ежемесячный курс, работающий с подсознанием человека. Его основа – методика,  <br>разработанная Иной Мейталь по просьбе клиентов. Помогает решить любую проблему на  <br>физическом и эмоциональном уровнях, повышает качество жизни во всех аспектах. За  <br>несколько месяцев работы вы выйдете на абсолютно другой уровень жизни, если  <br>пожелаете. Работаем с первопричиной, записанной в подсознании. Метод абсолютно  <br>экологичный. Каждый прорабатывает свою проблему в своем ритме. <br>
+							Вас ждет: <br>
+							- доступ к практикам на неограниченное время; <br>
+							- практические знания по работе с любой сферой жизни на уровне подсознания; <br>
+							- общение с участниками курса; <br>
+							- решения для различных жизненных проблем; <br>
+							- проработка любого волнующего вас вопроса.
+						</p>
+					</div>
+					<div class="services-block-btns">
+						<a href="#" class="body-btn">
+							Записаться
+						</a>
+						<a href="class.html" class="services-block-btns_pdrn">
+							Подробнее
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="services-center services-col">
-			<div class="services-block wow fadeInUp">
-				<img src="img/Rectangle 7.png" alt="" class="services-block__img">
-				<img src="img/mastter (6).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (5).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Курс
-					</h3>
-					<span class="services-block__price">
-						от 125 евро
-					</span>
-					<span class="services-block__date">
-						от 3 до 30 дней
-					</span>
-					<p class="services-block__text">
-						Нумерология.
-						Самоисцеление.
-						Управление эмоциями. <br>
-						Конфликты.
-					</p>
-				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
-			</div>
-			<div class="services-block wow fadeInUp">
-				<img src="img/Rectangle 6.png" alt="" class="services-block__img">
-				<img src="img/mastter (5).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (4).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Марафон
-					</h3>
-					<span class="services-block__price">
-						от 200 евро
-					</span>
-					<p class="services-block__text">
-						Закон «Зеркало».
-						Работа с подсознанием.
-					</p>
-				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
-			</div>
-			<div class="services-block wow fadeInUp">
-				<img src="img/Rectangle 4.png" alt="" class="services-block__img">
-				<img src="img/mastter (1).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (2).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Вебинар <br>
-						с проработкой 2 ч.
-					</h3>
-					<span class="services-block__price">
-						от 30 евро
-					</span>
-					<p class="services-block__text">
-						Много разных тем.
-					</p>
-				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
-			</div>
-		</div>
-		<div class="services-right services-col">
-			<div class="services-block wow fadeInRight">
-				<img src="img/Rectangle 2.png" alt="" class="services-block__img">
-				<img src="img/mastter (1).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (7).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Консультация 1,5 ч.
-					</h3>
-					<span class="services-block__price">
-						7 000 руб. | 85 евро
-					</span>
-					<p class="services-block__text">
-						Экспертиза, диагностика, терапия, разработка 
-						индивидуального плана
-						работы при необходимости.
-						Многие получают результат после одной терапии.
-					</p>
-				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
-			</div>
-			<div class="services-block wow fadeInRight">
-				<img src="img/Rectangle 5.png" alt="" class="services-block__img">
-				<img src="img/mastter (4).png" alt="" class="services-block__img services-block__tb">
-				<img src="img/kurs-mobile (3).png" alt="" class="services-block__img services-block__mob">
-				<div class="services-block-abc">
-					<h3 class="services-block__title">
-						Долгосрочный <br>
-						коучинг
-					</h3>
-					<span class="services-block__price">
-						* Энерготерапия включена <br>
-						84 000 руб. | 988 евро <br>
-						от 3 дней | 12 терапий
-					</span>
-					<p class="services-block__text">
-						Экспертиза, диагностика, терапия.
-						Разработка индивидуального плана работы при необходимости.
-						Сложные, глубокие, 
-						травматичные ситуации.
-					</p>
-				</div>
-				<a href="#" class="body-btn">
-					Запись
-				</a>
-			</div>
+	</div>
+</section>
+<section class="certificates">
+	<div class="container">
+		<h2 class="section-title section-title__left">
+			Сертификаты
+		</h2>
+		<div class="certificates-row">
+			<a href="img/sertificate/zoom/zom (3).png" data-fancybox="certificates"><img src="img/sertificate/serf (1).png" alt="" class="certificates__img wow fadeInUp"></a>
+			<a href="img/sertificate/zoom/zom (4).png" data-fancybox="certificates"><img src="img/sertificate/serf (2).png" alt="" class="certificates__img wow fadeInUp"></a>
+			<a href="img/sertificate/zoom/zom (5).png" data-fancybox="certificates"><img src="img/sertificate/serf (3).png" alt="" class="certificates__img wow fadeInUp"></a>
+			<a href="img/sertificate/zoom/zom (6).png" data-fancybox="certificates"><img src="img/sertificate/serf (4).png" alt="" class="certificates__img wow fadeInUp"></a>
+			<a href="img/sertificate/zoom/zom (1).png" data-fancybox="certificates"><img src="img/sertificate/serf (5).png" alt="" class="certificates__img wow fadeInUp"></a>
+			<a href="img/sertificate/zoom/zom (2).png" data-fancybox="certificates"><img src="img/sertificate/serf (6).png" alt="" class="certificates__img wow fadeInUp"></a>
 		</div>
 	</div>
 </section>
@@ -631,7 +649,7 @@
 					<span class="contacts-bottom__title">
 						Остались вопросы?
 					</span>
-					<a href="#" class="body-btn contacts-bottom__btn">
+					<a href="send.html" class="body-btn contacts-bottom__btn">
 						написать
 					</a>
 				</div>
@@ -646,10 +664,13 @@
 				<a class="footer-list__item_link scroll-btn" href="#header">Главная</a>
 			</li>
 			<li class="footer-list__item">
-				<a class="footer-list__item_link scroll-btn" href="#biography">Биография</a>
+				<a class="footer-list__item_link" href="biography.html">Биография</a>
 			</li>
 			<li class="footer-list__item">
 				<a class="footer-list__item_link scroll-btn" href="#services">О курсах</a>
+			</li>
+			<li class="footer-list__item">
+				<a class="footer-list__item_link scroll-btn" href="#result">отзывы</a>
 			</li>
 			<li class="footer-list__item">
 				<a class="footer-list__item_link footer-list__item_link_btn" href="">Запись</a>
@@ -659,6 +680,7 @@
 </footer>
 <!-- libs js -->
 <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/common.js"></script>
 </body>
 
